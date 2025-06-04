@@ -1,0 +1,16 @@
+@import "userVariables.css";
+@import "tab-closing-animation.css";
+@import "tab-loading-indicator.css";
+@import "iconized-main-menu.css";
+
+/* urlbar border on focus */
+#urlbar:focus-within > #urlbar-background {
+    border-color: -moz-accent-color !important;
+    border-width: 1px !important;
+}
+
+:root {
+  --tab-min-height: 33px !important;
+  /* --tabs-border-color: rgba(0,0,0,.3); */
+  --tabs-navbar-shadow-size: 1px;
+}
