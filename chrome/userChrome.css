@@ -1,12 +1,14 @@
 @import "userVariables.css";
+@import "square-tabs.css";
 @import "tab-closing-animation.css";
 @import "tab-loading-indicator.css";
 @import "iconized-main-menu.css";
+@import "menus.css";
 
 /* urlbar border on focus */
 #urlbar:focus-within > #urlbar-background {
-    border-color: -moz-accent-color !important;
-    border-width: 1px !important;
+  border-color: -moz-accent-color !important;
+  border-width: 1px !important;
 }
 
 :root {

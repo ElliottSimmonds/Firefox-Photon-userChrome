@@ -1,0 +1,11 @@
+/* FF profile picture */
+#appMenu-fxa-status2:is([fxastatus="signedin"], [fxastatus="unverified"], [fxastatus="login-failed"])
+  #appMenu-fxa-label2::before {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50%;
+  background-size: 18px;
+  background-image: var(--avatar-image-url);
+  margin-inline-end: 8px !important;
+  outline: solid #ffffff33 1px;
+}

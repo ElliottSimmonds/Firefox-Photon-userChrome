@@ -1,0 +1,75 @@
+/* Photon style square tabs */
+:root {
+  --tab-block-margin: 0 !important;
+}
+@media (-moz-platform: linux) {
+  .tabbrowser-tab {
+    height: calc(var(--tab-min-height) + 1px) !important;
+  }
+}
+#tabbrowser-tabs {
+  &[orient="horizontal"] {
+    :root[uidensity="touch"] & .tabbrowser-tab {
+      min-width: 0 !important;
+    }
+  }
+}
+#TabsToolbar-customization-target {
+  height: var(--tab-min-height) !important;
+  @media (-moz-platform: linux) {
+    height: calc(var(--tab-min-height) + 1px) !important;
+  }
+}
+
+/* Makes the tab photon-like + adds a transition */
+.tab-close-button {
+	border-radius: 2px !important;
+	/* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+}
+/* .tab-close-button {
+	padding-inline: 0px !important;
+	padding-block: 0px !important;
+	margin-inline-end: -2px !important;
+	width: 20px !important;
+	height: 20px !important;
+} */
+.tabbrowser-tab > .tab-stack > .tab-background {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+	/* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+}
+.tabbrowser-tab {
+	padding: 0 !important;
+}
+
+/* Line to mark selected tab */
+.tab-background[selected]::before,
+.tabbrowser-tab:hover > stack > .tab-background::before{
+  display: flex;
+  height: 2px;
+  content: "";
+}
+.tab-stack:hover > .tab-background::before{
+  background-color: inherit;
+}
+.tab-stack > .tab-background[selected]::before{
+  background-color: #0a84ff;
+}
+/* Photon-like tab on hover animation for the top line */
+@keyframes tab-onhover-line-anim{ from{ margin-inline: 20px } to { margin-inline: 0 } }
+
+.tab-stack:hover > .tab-background::before{ animation: tab-onhover-line-anim 160ms }
+
+/* Disable animation for selected and pinned tabs */
+.tabbrowser-tab:is([pinned],[selected]) > .tab-stack > .tab-background::before{ animation: none }
+
+/* connect tab to toolbar */
+.tab-background:is([selected]) {
+  background-color: var(--toolbar-bgcolor) !important;
+}
+
+.tab-background,
+#firefox-view-button image {
+	outline: none !important;
+}
