@@ -1,0 +1,15 @@
+:root {
+  --custom-accent-color: #0a84ff;
+
+  --tab-min-height: 33px !important;
+  /* --tabs-border-color: rgba(0,0,0,.3); */
+  --tabs-navbar-shadow-size: 1px !important;
+
+  --arrowpanel-menuitem-margin-inline: 4px !important;
+  --arrowpanel-menuitem-padding-inline: 4px !important;
+  --panel-subview-body-padding: 4px 0 !important;
+
+  --tab-attention-icon-color: var(--custom-accent-color) !important;
+  --urlbar-popup-url-color: var(--custom-accent-color) !important;
+  --focus-outline-color: var(--custom-accent-color) !important;
+}

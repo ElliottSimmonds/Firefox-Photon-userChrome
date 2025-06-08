@@ -23,24 +23,24 @@
 
 /* Makes the tab photon-like + adds a transition */
 .tab-close-button {
-	border-radius: 2px !important;
-	/* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+  border-radius: 2px !important;
+  /* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
 }
 /* .tab-close-button {
-	padding-inline: 0px !important;
-	padding-block: 0px !important;
-	margin-inline-end: -2px !important;
-	width: 20px !important;
-	height: 20px !important;
+  padding-inline: 0px !important;
+  padding-block: 0px !important;
+  margin-inline-end: -2px !important;
+  width: 20px !important;
+  height: 20px !important;
 } */
 .tabbrowser-tab > .tab-stack > .tab-background {
-	border-radius: 0 !important;
-	margin: 0 !important;
-	box-shadow: none !important;
-	/* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+  border-radius: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  /* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
 }
 .tabbrowser-tab {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 /* Line to mark selected tab */
@@ -54,7 +54,7 @@
   background-color: inherit;
 }
 .tab-stack > .tab-background[selected]::before{
-  background-color: #0a84ff;
+  background-color: var(--custom-accent-color);
 }
 /* Photon-like tab on hover animation for the top line */
 @keyframes tab-onhover-line-anim{ from{ margin-inline: 20px } to { margin-inline: 0 } }
@@ -71,26 +71,26 @@
 
 .tab-background,
 #firefox-view-button image {
-	outline: none !important;
+  outline: none !important;
 }
 
 /* tab separators */
 #TabsToolbar .tabbrowser-tab:not([selected="true"]) .tab-stack::before {
-	content: "";
-	position: absolute;
-	display: block;
-	height: var(--tab-min-height);
-	right: 0;
-	border-right: 1px solid color-mix(in srgb, currentColor 20%, transparent);
-	z-index: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  height: var(--tab-min-height);
+  right: 0;
+  border-right: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  z-index: 1;
 }
 .tabbrowser-tab:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-stack::before,
 :root #firefox-view-button[open] + #tabbrowser-tabs arrowscrollbox > :first-child:not([selected="true"]) .tab-stack::after,
 :root #firefox-view-button[open]::before {
-	border-right-color: transparent !important;
+  border-right-color: transparent !important;
 }
 
 /* tab Groups */
 .tab-group-label {
-	border-radius: 2px !important;
+  border-radius: 2px !important;
 }

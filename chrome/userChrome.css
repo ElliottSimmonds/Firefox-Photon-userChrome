@@ -5,14 +5,13 @@
 @import "iconized-main-menu.css";
 @import "menus.css";
 
-/* urlbar border on focus */
+/* urlbar border */
 #urlbar:focus-within > #urlbar-background {
-  border-color: -moz-accent-color !important;
-  border-width: 1px !important;
+  border-color: var(--custom-accent-color) !important;
 }
-
-:root {
-  --tab-min-height: 33px !important;
-  /* --tabs-border-color: rgba(0,0,0,.3); */
-  --tabs-navbar-shadow-size: 1px;
+#urlbar-background {
+  transition: border-color 0.5s ease !important;
+}
+#urlbar:hover #urlbar-background {
+  border-color: var(--custom-accent-color) !important;
 }
