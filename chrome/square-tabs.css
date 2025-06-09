@@ -85,12 +85,34 @@
   z-index: 1;
 }
 .tabbrowser-tab:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-stack::before,
+tab-group:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tabbrowser-tab:last-child .tab-stack::before,
 :root #firefox-view-button[open] + #tabbrowser-tabs arrowscrollbox > :first-child:not([selected="true"]) .tab-stack::after,
 :root #firefox-view-button[open]::before {
   border-right-color: transparent !important;
 }
 
-/* tab Groups */
+/* tab groups */
+tab-group[collapsed] .tab-group-label-container {
+  border-right: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  .tab-group-label {
+    outline: none !important;
+  }
+}
+/* color transparent will leave a 1px gap */
+tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-group-label-container {
+  border-right-color: var(--tab-group-color);
+}
 .tab-group-label {
-  border-radius: 2px !important;
+  border-radius: 0px !important;
+  height: 100%;
+  padding: 7px 7px !important;
+}
+.tab-group-label-container {
+  margin-inline-start: 0px !important;
+  padding-inline-end: 0px !important;
+}
+
+/* remove space between pinned tabs and regular tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])[orient="horizontal"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+  margin-inline-start: 0px !important;
 }
