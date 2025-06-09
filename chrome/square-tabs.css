@@ -44,7 +44,7 @@
 }
 
 /* Line to mark selected tab */
-.tab-background[selected]::before,
+.tab-background:is([selected],[multiselected])::before,
 .tabbrowser-tab:hover > stack > .tab-background::before{
   display: flex;
   height: 2px;
@@ -53,7 +53,7 @@
 .tab-stack:hover > .tab-background::before{
   background-color: inherit;
 }
-.tab-stack > .tab-background[selected]::before{
+.tab-stack > .tab-background:is([selected],[multiselected])::before{
   background-color: var(--custom-accent-color);
 }
 /* Photon-like tab on hover animation for the top line */
@@ -62,7 +62,7 @@
 .tab-stack:hover > .tab-background::before{ animation: tab-onhover-line-anim 160ms }
 
 /* Disable animation for selected and pinned tabs */
-.tabbrowser-tab:is([pinned],[selected]) > .tab-stack > .tab-background::before{ animation: none }
+.tabbrowser-tab:is([pinned],[selected],[multiselected]) > .tab-stack > .tab-background::before{ animation: none }
 
 /* connect tab to toolbar */
 .tab-background:is([selected]) {
