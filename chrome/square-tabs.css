@@ -116,3 +116,11 @@ tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])[orient="horizontal"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
   margin-inline-start: 0px !important;
 }
+
+/* enlarge close tab icon */
+.tab-close-button {
+  padding-inline: 4px !important;
+  padding-block: 4px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
