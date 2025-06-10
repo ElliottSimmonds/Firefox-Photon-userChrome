@@ -1,9 +1,13 @@
-@import "userVariables.css";
-@import "square-tabs.css";
-@import "tab-closing-animation.css";
-@import "tab-loading-indicator.css";
-@import "iconized-main-menu.css";
-@import "menus.css";
+@import url(userVariables.css);
+@import url(square-tabs.css);
+@import url(menus.css);
+@import url(csshacks/tab-closing-animation.css);
+@import url(csshacks/tab-loading-indicator.css);
+@import url(csshacks/iconized-main-menu.css);
+@import url(csshacks/iconized-textbox-context-menu.css);
+@import url(csshacks/iconized-tabs-context-menu.css);
+@import url(csshacks/iconized-places-context-menu.css);
+@import url(csshacks/iconized-content-context-menu.css);
 
 /* urlbar border */
 #urlbar:focus-within > #urlbar-background {
