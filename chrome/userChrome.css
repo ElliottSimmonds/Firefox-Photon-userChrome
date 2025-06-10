@@ -19,3 +19,22 @@
 #urlbar:hover #urlbar-background {
   border-color: var(--custom-accent-color) !important;
 }
+
+/* nifty bookmark icon pulse effect */
+#star-button {
+  filter: drop-shadow(0 0 0 var(--toolbarbutton-icon-fill-attention));
+}
+#star-button[starred] {
+  animation: pulse-shadow 0.5s ease;
+}
+@keyframes pulse-shadow {
+  0% {
+    filter: drop-shadow(0 0 0 var(--toolbarbutton-icon-fill-attention));
+  }
+  50% {
+    filter: drop-shadow(0 0 3px var(--toolbarbutton-icon-fill-attention));
+  }
+  100% {
+    filter: drop-shadow(0 0 0 var(--toolbarbutton-icon-fill-attention));
+  }
+}
