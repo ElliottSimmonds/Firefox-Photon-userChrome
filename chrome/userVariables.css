@@ -1,5 +1,7 @@
 :root {
   --custom-accent-color: #0a84ff;
+  --custom-accent-color-oklch: oklch(62% 0.2 255);
+  --custom-accent-color-hover-oklch: oklch(70% 0.2 255);
 
   --tab-min-height: 33px !important;
   /* --tabs-border-color: rgba(0,0,0,.3); */
@@ -12,6 +14,11 @@
   --tab-attention-icon-color: var(--custom-accent-color) !important;
   --urlbar-popup-url-color: var(--custom-accent-color) !important;
   --focus-outline-color: var(--custom-accent-color) !important;
+  --color-accent-primary: var(--custom-accent-color) !important;
+  --in-content-primary-button-background: var(--custom-accent-color-oklch) !important;
+  --in-content-primary-button-text-color: var(--in-content-button-text-color) !important;
+  --in-content-primary-button-background-hover: var(--custom-accent-color-hover-oklch) !important;
+  --in-content-primary-button-text-color-hover: var(--in-content-button-text-color-hover) !important;
 
   --tab-group-line-toolbar-border-distance: 0px !important;
 }
