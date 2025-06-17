@@ -38,3 +38,8 @@
     filter: drop-shadow(0 0 0 var(--toolbarbutton-icon-fill-attention));
   }
 }
+
+/* hide adjacent menu separators (seen in bookmarks menu) */
+menuseparator + menuseparator {
+  display: none;
+}
