@@ -1,16 +1,10 @@
 :root {
+  /* colours */
   --custom-accent-color: #0a84ff;
   --custom-accent-color-oklch: oklch(62% 0.2 255);
   --custom-accent-color-hover-oklch: oklch(70% 0.2 255);
 
-  --tab-min-height: 33px !important;
   /* --tabs-border-color: rgba(0,0,0,.3); */
-  --tabs-navbar-shadow-size: 1px !important;
-
-  --arrowpanel-menuitem-margin-inline: 4px !important;
-  --arrowpanel-menuitem-padding-inline: 4px !important;
-  --panel-subview-body-padding: 4px 0 !important;
-
   --tab-attention-icon-color: var(--custom-accent-color) !important;
   --urlbar-popup-url-color: var(--custom-accent-color) !important;
   --focus-outline-color: var(--custom-accent-color) !important;
@@ -19,6 +13,15 @@
   --in-content-primary-button-text-color: var(--in-content-button-text-color) !important;
   --in-content-primary-button-background-hover: var(--custom-accent-color-hover-oklch) !important;
   --in-content-primary-button-text-color-hover: var(--in-content-button-text-color-hover) !important;
+  --button-text-color-primary: var(--button-text-color) !important;
+  --button-text-color-primary-hover: var(--button-text-color-hover) !important;
 
+  /* sizing and padding */
+  --tab-min-height: 33px !important;
   --tab-group-line-toolbar-border-distance: 0px !important;
+  --tabs-navbar-shadow-size: 1px !important;
+
+  --arrowpanel-menuitem-margin-inline: 4px !important;
+  --arrowpanel-menuitem-padding-inline: 4px !important;
+  --panel-subview-body-padding: 4px 0 !important;
 }
