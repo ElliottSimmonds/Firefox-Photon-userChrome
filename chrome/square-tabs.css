@@ -24,20 +24,19 @@
 /* Makes the tab photon-like + adds a transition */
 .tab-close-button {
   border-radius: 2px !important;
-  /* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+  transition: background 0.2s cubic-bezier(.07,.95,0,1) !important;
 }
-/* .tab-close-button {
-  padding-inline: 0px !important;
-  padding-block: 0px !important;
-  margin-inline-end: -2px !important;
-  width: 20px !important;
-  height: 20px !important;
-} */
+.tab-close-button {
+  padding-inline: 4px !important;
+  padding-block: 4px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
 .tabbrowser-tab > .tab-stack > .tab-background {
   border-radius: 0 !important;
   margin: 0 !important;
   box-shadow: none !important;
-  /* transition: background 0.2s cubic-bezier(.07,.95,0,1) !important; */
+  transition: background 0.2s cubic-bezier(.07,.95,0,1) !important;
 }
 .tabbrowser-tab {
   padding: 0 !important;
@@ -115,14 +114,6 @@ tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-
 /* remove space between pinned tabs and regular tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])[orient="horizontal"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
   margin-inline-start: 0px !important;
-}
-
-/* enlarge close tab icon */
-.tab-close-button {
-  padding-inline: 4px !important;
-  padding-block: 4px !important;
-  width: 24px !important;
-  height: 24px !important;
 }
 
 /* change colour of indicator when creating a new tab while overflowing */
