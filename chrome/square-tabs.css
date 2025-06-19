@@ -124,3 +124,15 @@ tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-
   width: 24px !important;
   height: 24px !important;
 }
+
+/* change colour of indicator when creating a new tab while overflowing */
+/* #scrollbutton-down is inside a shadow dom */
+#tabbrowser-arrowscrollbox {
+  --scrollbutton-bg: transparent;
+}
+#tabbrowser-arrowscrollbox[highlight] {
+  --scrollbutton-bg: var(--custom-accent-color);
+}
+#scrollbutton-down {
+  background-color: var(--scrollbutton-bg) !important;
+}
