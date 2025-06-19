@@ -6,10 +6,17 @@ Mostly comprised of features pulled from the projects below.
 Notable personal touches:
 * Urlbar border highlight on hover
 * Selected tab line extends to multiselected tabs
-* Square tab groups without padding
+* Square tab groups without margins
 * Applied accent colour in more areas
 * Updated tab separator behaviour
 * Enlarged tab close icon
+
+Todo list:
+* Style about pages
+* Better user configurable variables
+* Menu styling (bookmarks, extensions)
+* Menubar styling
+* Sidebar / vertical tabs styling
 
 ## Sources
 
