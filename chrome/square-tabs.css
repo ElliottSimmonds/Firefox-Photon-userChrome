@@ -127,3 +127,15 @@ tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-
 #scrollbutton-down {
   background-color: var(--scrollbutton-bg) !important;
 }
+
+/* firefox view styling */
+#tabbrowser-tabs {
+  margin-inline-start: 0px !important;
+  padding-inline-start: var(--tab-overflow-pinned-tabs-width) !important;
+}
+#firefox-view-button .toolbarbutton-icon {
+  border-radius: 0 !important;
+  padding-left: calc(var(--toolbarbutton-inner-padding) + 1px) !important;
+  padding-right: calc(var(--toolbarbutton-inner-padding) + 1px) !important;
+  width: 36px !important;
+}
