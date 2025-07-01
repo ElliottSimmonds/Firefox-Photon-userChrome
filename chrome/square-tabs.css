@@ -138,6 +138,9 @@ tab-group[collapsed]:has(+ .tabbrowser-tab[selected="true"]:not([hidden])) .tab-
   margin-inline-start: 0px !important;
   padding-inline-start: var(--tab-overflow-pinned-tabs-width) !important;
 }
+#firefox-view-button {
+  padding: 0;
+}
 #firefox-view-button .toolbarbutton-icon {
   padding-left: calc(var(--toolbarbutton-inner-padding) + 1px) !important;
   padding-right: calc(var(--toolbarbutton-inner-padding) + 1px) !important;
